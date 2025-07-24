@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Dancing+Script:wght@700&display=swap');
+
+body {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden; /* To hide overflowing balloons */
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.birthday-card {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  max-width: 500px;
+  transform: scale(0.95);
+  animation: pop-in 0.8s ease-out forwards;
+}
+
+@keyframes pop-in {
+  to {
+    transform: scale(1);
+  }
+}
+
+.birthday-image {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4em;
+  color: #e75480;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.from {
+  font-style: italic;
+  margin-top: 25px;
+  color: #777;
+}
+
+#balloons-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.curtain {
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #8B0000, #B22222); /* màu đỏ đậm kiểu màn sân khấu */
+  z-index: 9999;
+  transition: transform 1s ease-in-out;
+}
+
+.left-curtain {
+  left: 0;
+  border-right: 2px solid #fff;
+}
+
+.right-curtain {
+  right: 0;
+  border-left: 2px solid #fff;
+}
+
+.open-left {
+  transform: translateX(-100%);
+}
+
+.open-right {
+  transform: translateX(100%);
+}

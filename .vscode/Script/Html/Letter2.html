@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/Letter2.css">
+    <title>Thiệp nữa he</title>
+</head>
+
+<body id="body" onclick="fullScreen()">
+    <div class="stars"></div>
+    <button class="start-btn" id="startBtn">Click to Start ✨</button>
+    <div id="wishesContainer" class="hidden">
+        <div id="wishes" class="wishes"></div>
+    </div>
+    <audio id="bgMusic" loop>
+        <source type="audio/mpeg" src="../../Music/You_Are_My_Everything.mp3">
+    </audio>
+
+    <button id="muteButton" class="mute-btn">🔊</button>
+    <script src="../Js/Letter2.js"></script>
+    <!-- <script>
+        window.addEventListener('click', function () {
+            const music = document.getElementById('bg-music');
+            if (music && music.paused) {
+                music.play().catch(err => console.warn('Không phát được nhạc:', err));
+            }
+        });
+    </script> -->
+</body>
+
+</html>

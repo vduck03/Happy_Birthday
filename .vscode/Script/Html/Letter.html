@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/Letter.css">
+    <title>Thiệp nhéeeeee</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎉 Happy Birthday lần nữa nhóoo! 🎀</h1>
+
+        <p>Hôm nay là ngày của baby. Đừng để những lời nói hay những người khác khiến Kem buồn 💖
+
+            Ước rằng mọi điều với đến với Kem đều là điều tốt lành, <br>
+
+            mọi cây bài đến tay Kem đều là cây thắng! 🌸💌</p>
+
+        <div class="love-note">
+            Chúc baby cụa Ú thật nhiều sức khỏe, hạnh phúc và thành công trong cuộc sống, lúc nào<br
+
+            cũng cười toe toét như thế này nhé! 😘
+        </div>
+
+        <div class="shoutout">
+            Bên dưới là tổng hợp những khoảnh khắc đáng nhớ của hai ta trong suốt thời gian qua mà Ú đã lưu lại. 
+            Hy vọng rằng Kem sẽ thích nó 🥰.
+        </div>
+        <div class="gallery-wrapper">
+            <button class="nav-btn prev">←</button>
+            <div class="gallery-container">
+                <div class="gallery" id="gallery">
+                    <img src="../../Image/Letter01.jpg" alt="Memory 1">
+                    <img src="../../Image/Letter02.jpg" alt="Memory 2">
+                    <img src="../../Image/Letter03.jpg" alt="Memory 3">
+                    <img src="../../Image/Letter04.jpg" alt="Memory 4">
+                    <img src="../../Image/Letter05.jpg" alt="Memory 5">
+                    <img src="../../Image/Letter06.jpg" alt="Memory 6">
+                    <img src="../../Image/Letter07.jpg" alt="Memory 7">
+                    <img src="../../Image/Letter08.jpg" alt="Memory 8">
+                    <img src="../../Image/Letter09.jpg" alt="Memory 9">
+                    <img src="../../Image/Letter10.jpg" alt="Memory 10">
+                    <img src="../../Image/Letter11.jpg" alt="Memory 11">
+                    <img src="../../Image/Letter12.jpg" alt="Memory 12">
+                </div>
+            </div>
+            <button class="nav-btn next">→</button>
+        </div>
+        <p class="footer">Ú bếu đến ròi đêyyy</p>
+        <a href="Gift.html">Còn đếy</a>
+
+    </div>
+
+    <audio id="bgMusic" autoplay>
+        <source type="audio/mpeg" src="../../Music/tada.mp3">
+    </audio>
+    <script src="../Js/Letter.js"></script>
+    <script>
+        window.addEventListener('click', function () {
+            const music = document.getElementById('bg-music');
+            if (music && music.paused) {
+                music.play().catch(err => console.warn('Không phát được nhạc:', err));
+            }
+        });
+    </script>
+</body>
+
+</html>

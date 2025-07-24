@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Css/Happy_Birthday_1st_Page.css">
+  <title>Happy Birthday Baby!</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="birthday-card">
+      <img src="../../Image/Bìa thiệp.jpg" alt="Happy Birthday" class="birthday-image">
+      <h1>Happy Birthday</h1>
+      <h2>Bé Kem cụa Úuuuuuu</h2>
+      <p>
+        Tới baby cụa Ú, hôm nay là ngày đặc biệt của baby đó!
+        Chúc baby có một ngày sinh nhật thật vui vẻ nheee
+      </p>
+      <p class="from">- VDuck mặp ú nè</p>
+    </div>
+    <div style="text-align: bottom; margin-top: 20px;">
+      <a href="Cake.html">Tiếp nèo</a>
+    </div>
+  </div>
+  <canvas id="balloons-canvas"></canvas>
+  <audio id="bg-music" autoplay loop>
+    <source src="../../Music/Happy Birthday To You.mp3" type="audio/mpeg">
+  </audio>
+  <!-- <div id="overlay" onclick="playMusicAndHideOverlay()">
+    <div class="overlay-text">Ấn vào đây để bắt đầu 🎶</div>
+  </div> -->
+  <div class="curtain left-curtain"></div>
+  <div class="curtain right-curtain"></div>
+
+  <script src="../Js/Happy_Birthday_1st_Page.js"></script>
+  <script>
+    window.addEventListener('click', function () {
+      const music = document.getElementById('bg-music');
+      if (music && music.paused) {
+        music.play().catch(err => console.warn('Không phát được nhạc:', err));
+      }
+    });
+  </script>
+</body>
+
+</html>
